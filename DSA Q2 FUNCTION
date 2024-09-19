@@ -1,0 +1,28 @@
+// ALL PRIME NUMBER FROM 1 TO N
+#include <iostream>
+using namespace std;
+
+void allPrime(int a)
+{
+    for (int i = 1; i < a; i++)
+    {
+        bool isPrime = true;
+        for (int j = 2; j < i; j++)
+        {
+            if (i % j == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime == true)
+        {
+            cout << i << endl;
+        }
+    }
+}
+int main()
+{
+    allPrime(10);
+    return 0;
+}
