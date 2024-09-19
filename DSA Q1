@@ -1,0 +1,26 @@
+// WAP PRIME OR NOR
+//ALL PRIME NUMBER FROM 1 TO N
+// PRINT NTH FIONAACHI
+#include<iostream>
+using namespace std;
+void checkingPrime(int a){
+ bool isPrime=true;
+    for (int i = 2; i < a; i++)
+    {
+        if(a%i==0){
+            cout<<"NOT PRIME ";
+            isPrime=false;
+            break;
+        }
+    }
+    if(isPrime==true){
+        cout<<"PRIME NUMBER";
+    }
+}
+    
+int main()
+{
+    checkingPrime(3);
+
+    return 0;
+}
